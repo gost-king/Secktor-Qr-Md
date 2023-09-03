@@ -107,8 +107,8 @@ app.get("/", (req, res) => {
            await delay(800)
           const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`, {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
           let c = output.data.split('/')[3]
-           await session.sendMessage(session.user.id, {text: 'Secktor;;;'+c});	
-          let cc = `*Thanks for choosing Secktor-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Secktor-bot_\n\nVisit secktorbot.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
+           await session.sendMessage(session.user.id, {text: 'Dark-Nero;;;'+c});	
+          let cc = `hi pahan pakaya`
           await session.sendMessage(session.user.id, {text: cc});
           } catch (e) {
             console.log(e)
