@@ -108,7 +108,10 @@ app.get("/", (req, res) => {
           const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`, {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
           let c = output.data.split('/')[3]
            await session.sendMessage(session.user.id, {text: 'Dark-Nero;;;'+c});	
-          let cc = `hi pahan pakaya`
+          let cc = `⚠ᴅᴏ ɴᴏᴛ ꜱʜᴀʀᴇ ᴛʜɪꜱ ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ⚠
+____________________________________
+💞ʏᴏᴜʀ Qʀ ꜱᴄᴀɴɴᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ💞
+____________________________________`
           await session.sendMessage(session.user.id, {text: cc});
           } catch (e) {
             console.log(e)
