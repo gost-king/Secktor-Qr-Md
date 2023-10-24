@@ -86,7 +86,7 @@ app.get("/", (req, res) => {
          if (s.qr) {
            const QRLogo = require('qr-with-logo');
  const data = JSON.stringify(s.qr)
- await QRLogo.generateQRWithLogo(data.replace(/"/g,''), "logo.jpg", {}, "Base64", "qrlogo.jpg", async function(b64) {
+ await QRLogo.generateQRWithLogo(data.replace(/"/g,''), "resize.png", {}, "Base64", "qrlogo.png", async function(b64) {
              _huh = b64
    //console.log(b64)
  });
